@@ -1,0 +1,22 @@
+@import 'STYLESHEET/util.scss';
+
+html.coi {
+  .language-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100; // language dropdown should appear on top of all else
+
+    .MuiButton-root {
+      min-width: initial;
+      @include padding('sm');
+      @include rem-font-size(12);
+      border-radius: 0;
+    }
+  }
+
+  #language-menu-expand {
+    max-height: 165px;
+    overflow-y: scroll;
+  }
+}

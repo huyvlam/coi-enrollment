@@ -1,0 +1,39 @@
+/*
+ * @desc: Import and create stylesheet for your app here
+ */
+
+@import 'STYLESHEET/util.scss';
+
+html.coi {
+  body.enrollment-app {
+    .app-main {
+      @include responsive-width();
+      @include margin('xl');
+      @include padding('lg');
+      @include border('lightest gray');
+      @include box-shadow('primary box shadow', 'light gray');
+      @include background-color('primary background');
+    }
+
+    .footer-link-row {
+      @include margin('sm');
+      @include padding('sm');
+
+      a {
+        @include padding('xs');
+        padding-right: 0; // remove left padding here to offset, add it back in content
+
+        &:after {
+          content: '|';
+          @include padding('xs', 'left');
+          @include text-color('indigo');
+        }
+      }
+      a:last-of-type {
+        &:after {
+          content: '';
+        }
+      }
+    }
+  }
+}

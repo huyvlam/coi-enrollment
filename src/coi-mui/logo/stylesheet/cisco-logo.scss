@@ -1,0 +1,19 @@
+@import 'STYLESHEET/util.scss';
+
+html.coi {
+  .xs-cisco-logo {
+    @include cisco-logo('xs', 'cisco blue');
+  }
+  .sm-cisco-logo {
+    @include cisco-logo('sm', 'cisco blue');
+  }
+  .md-cisco-logo {
+    @include cisco-logo('md', 'cisco blue');
+  }
+  .lg-cisco-logo {
+    @include cisco-logo('lg', 'cisco blue');
+  }
+  .xl-cisco-logo {
+    @include cisco-logo('xl', 'cisco blue');
+  }
+}

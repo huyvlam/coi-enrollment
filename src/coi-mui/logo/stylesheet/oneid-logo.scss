@@ -1,0 +1,24 @@
+@import 'STYLESHEET/util.scss';
+
+html.coi {
+  .xs-oneid-logo {
+    width: get-preset-pixel(16);
+    height: auto;
+  }
+  .sm-oneid-logo {
+    width: get-preset-pixel(24);
+    height: auto;
+  }
+  .md-oneid-logo {
+    width: get-preset-pixel(32);
+    height: auto;
+  }
+  .lg-oneid-logo {
+    width: get-preset-pixel(40);
+    height: auto;
+  }
+  .xl-oneid-logo {
+    width: get-preset-pixel(48);
+    height: auto;
+  }
+}

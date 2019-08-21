@@ -1,0 +1,15 @@
+@import 'STYLESHEET/util.scss';
+
+.password-helper {
+  display: block;
+
+  &::before {
+    content: "\00a0\00a0";
+  }
+}
+
+.Mui-error {
+  .valid-helper {
+    @include text-color();
+  }
+}
